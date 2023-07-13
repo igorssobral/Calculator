@@ -1,0 +1,118 @@
+
+body {
+    display: flex;
+    background-color: rgb(25, 15, 39);    
+    width: 100vw;
+    position: fixed;
+    margin: 10px;
+    
+
+}
+
+
+.result{
+    display: block;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 240px;
+    top: 50px;
+    color: aliceblue;
+    font-size:  2.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.data-cel{
+    display: flex;
+    background-color: rgb(3, 3, 3);
+    width: 320px;
+    height: 500px;
+    margin: 20%;
+    position: absolute;
+    border-radius: 50px;
+}
+.operandos,.numbers{
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    /* justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center; */
+    
+}
+
+.operandos{
+    
+    position: relative;
+    left: 60px;
+    bottom: 89px;
+    margin: 50%;
+    grid-template-columns: repeat(1,auto);
+}
+
+.numbers{
+    
+    position: absolute;
+   left: -140px;
+    margin: 50%;
+    top: 40px;
+    grid-template-columns: repeat(3,auto);
+}
+
+
+
+div.celula-operandos{
+    background-color: rgb(172, 142, 11);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+   margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all .2s ease-out;
+    
+}
+
+.celula-operandos:hover{
+    background-color: rgba(172, 142, 11, 0.8);
+    -webkit-transition: all .2s ease-in;
+}
+.celula{
+    background-color: rgb(54, 54, 52);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    -webkit-transition: all .2s ease-out;
+   
+}
+div#porc{
+    position: relative;
+    top: 65px;
+    right: 65px;
+}
+
+div#virg{
+    position: relative;
+    left: 130px;
+}
+
+div#zero{
+    position: absolute;
+    bottom: 0px;
+    padding-left: 60px;
+    border-radius: 50px;
+    justify-items: right;
+}
+
+.celula:hover{
+    background-color: rgba(54, 54, 52, 0.7);
+    -webkit-transition: all .2s ease-in;
+}
+    
+
