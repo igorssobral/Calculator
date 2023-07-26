@@ -10,7 +10,7 @@ body {
 }
 
 
-.result{
+.current-operation{
     display: block;
     width: 100px;
     height: 20px;
@@ -30,8 +30,10 @@ body {
     position: absolute;
     border-radius: 50px;
 }
-.operandos,.numbers{
+.operandos,.numbers,button{
     display: grid;
+    justify-content: center;
+    align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
     color: white;
@@ -62,15 +64,13 @@ body {
 
 
 
-div.celula-operandos{
+button.celula-operandos{
     background-color: rgb(172, 142, 11);
     border-radius: 50%;
     width: 60px;
     height: 60px;
    margin: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     -webkit-transition: all .2s ease-out;
     
 }
@@ -91,23 +91,28 @@ div.celula-operandos{
     -webkit-transition: all .2s ease-out;
    
 }
-div#porc{
+button#porc{
+    display: flex;
     position: relative;
     top: 65px;
-    right: 65px;
+    right: 73px;
+
 }
 
-div#virg{
+button#virg{
     position: relative;
     left: 130px;
 }
 
-div#zero{
+button#zero{
+    display: flex;
     position: absolute;
     bottom: 0px;
-    padding-left: 60px;
+    padding-left: 115px;
     border-radius: 50px;
-    justify-items: right;
+    
+    
+    
 }
 
 .celula:hover{
