@@ -9,16 +9,18 @@ body {
 
 }
 
-
 .current-operation{
     display: block;
-    width: 100px;
-    height: 20px;
-    position: absolute;
-    left: 240px;
+    width: 83%;
+    left: 20px;
+    height: 50px;
+    position: absolute;  
     top: 50px;
     color: aliceblue;
-    font-size:  2.9rem;
+    text-align:  end;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    font-size:  2.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .data-cel{
