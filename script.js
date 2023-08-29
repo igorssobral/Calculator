@@ -2,6 +2,8 @@ const buttons = document.querySelectorAll("[celula-bottom]");
 const current = document.querySelector("[cell-current]");
 let previous = "";
 let result = null;
+let signal = "";
+let op = "";
 
 class calculator {
   constructor(current) {
@@ -45,14 +47,21 @@ class calculator {
   }
 
   operations(operation) {
-    let signal = "";
-    let op = "";
+    console.log(result);
+
+    if (result !== null && operation === "=") {
+      // se o usuario aapertar o sinal de = depois de um calculo ele calcula o resultado com o valor apois o sinal do cálculo anterior!
+      previous = result;
+      previous += signal;
+      previous += op[1];
+    }
     if (operation !== "=") {
       if (result !== null) {
         //caso o usuario deseje calcular o resultado com outros valores
         previous = result;
         result = null;
       }
+
       previous += operation;
 
       this.current.innerText = "";

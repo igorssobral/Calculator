@@ -4,7 +4,10 @@ body {
     background-color: rgb(25, 15, 39);    
     width: 100vw;
     position: fixed;
-    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    bottom: 50%;
     
 
 }
@@ -28,7 +31,7 @@ body {
     background-color: rgb(3, 3, 3);
     width: 320px;
     height: 500px;
-    margin: 20%;
+    margin: 50%;
     position: absolute;
     border-radius: 50px;
 }
