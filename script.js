@@ -43,6 +43,15 @@ class calculator {
   operations(operation) {
     console.log(result);
 
+    if(operation === "C"){
+      previous = "";
+      signal = "";
+      result = null;
+      op = "";
+      this.current.innerText = "";
+      this.currentOperation = "";
+    }
+
     if (result !== null && operation === "=") {
       // se o usuario apertar o sinal de = depois de um calculo ele calcula o resultado com o valor apois o sinal do cálculo anterior!
       previous = result;
@@ -55,7 +64,11 @@ class calculator {
         previous = result;
         result = null;
       }
+
+      if (operation !== "C"){
         previous += operation;
+      }
+        
        
         console.log("🚀 ~ file: script.js:65 ~ calculator ~ operations ~ previous:", previous)
       

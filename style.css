@@ -52,8 +52,8 @@ body {
 .operandos{
     
     position: relative;
-    left: 60px;
-    bottom: 89px;
+    left: 55px;
+    bottom: 154px;
     margin: 50%;
     grid-template-columns: repeat(1,auto);
 }
@@ -96,11 +96,16 @@ button.celula-operandos{
     -webkit-transition: all .2s ease-out;
    
 }
-button#porc{
+button#porc,button#buttonC{
     display: flex;
     position: relative;
+    top: 130px;
+    right: 70px;
+
+}
+button#buttonC{
+    right: 135px;
     top: 65px;
-    right: 73px;
 
 }
 
