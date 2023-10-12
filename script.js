@@ -28,21 +28,22 @@ class calculator {
         this.current.innerText += ".";
       }
     }
-
+ console.log("🚀 ~ file: script.js:38 ~ calculator ~ addDigit ~ previous:", previous)
     this.currentOperation = value;
-
+    console.log("🚀 ~ file: script.js:33 ~ calculator ~ addDigit ~ currentOperation:", this.currentOperation)
     if (value === ",") {
       previous += ".";
     }
     previous += this.currentOperation;
-
+    console.log("🚀 ~ file: script.js:38 ~ calculator ~ addDigit ~ previous:", previous)
+   
     this.updateScreen();
   }
 
   operations(operation) {
     console.log(result);
 
-    if (operation === "C") {
+    if(operation === "C"){
       previous = "";
       signal = "";
       result = null;
@@ -64,9 +65,15 @@ class calculator {
         result = null;
       }
 
-      if (operation !== "C") {
+      if (operation !== "C"){
         previous += operation;
       }
+        
+       
+        console.log("🚀 ~ file: script.js:65 ~ calculator ~ operations ~ previous:", previous)
+      
+
+      
 
       this.current.innerText = "";
       this.currentOperation = "";
@@ -117,7 +124,8 @@ class calculator {
     this.current.innerText += this.currentOperation;
 
     if (result !== null) {
-      this.current.innerText = parseFloat(result);
+      this.current.innerText = result;
+      
     }
   }
 }
